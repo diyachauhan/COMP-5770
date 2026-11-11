@@ -1,0 +1,434 @@
+{
+  "4": {
+    "id": "mc-0046",
+    "calculator_id": 4,
+    "calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk",
+    "kind": "rule",
+    "note_id": "pmc-3317869-1",
+    "note_hash": "f2939a631a8a3dc295332066ad647da4c987367e646aed7f2014eec79a985624",
+    "note": "A 56-year-old woman with a significant history of RCA stenosis with prior bare metal stenting, hypertension, diabetes, dyslipidemia, smoking, and paroxysmal atrial fibrillation presented to the emergency department with anginal chest pain. Initial work up showed significant elevation of cardiac troponin T with T-wave inversion in the inferior leads. She subsequently underwent cardiac catheterization. Coronary angiography revealed a 90% stenosis of the midportion of RCA with patent stent at distal portion of RCA (Figure , ) and only mild disease in left anterior descending coronary and left circumflex coronary arteries. An everolimus-eluting stent, 2.5 mm × 23 mm, was placed in the stenosis of midportion of RCA. Immediately after these interventions, thrombus developed and occluded SN artery. It originated from the proximal one third portion of RCA. Electrocardiographic monitoring showed junctional escape rhythm without P waves at a heart rate of 30 beats/min, suggesting sinus arrest (Figure ). To prevent severe bradycardia and hypotension, transvenous temporary pacemaker was placed. The patient remained asymptomatic and without hypotension. The clot in the SN artery was identified and thrombectomy was performed. Within five minutes after intervention, Thrombolysis In Myocardial Infarction (TIMI) flow 3 was observed in the SN artery within 5 minutes and the transvenous temporary pacer was removed. Electrocardiogram revealed persistent junctional escape rhythm for 5 days after revascularization, with restoration of sinus rhythm on the sixth day. Heart rate showed a gradual improvement and the patient maintained a stable heart rate at 60 beats per minute. The patient remained hemodynamically stable without further need for temporary pacing. Pre-discharge exercise stress test had shown 50% predicted heart rate at 100 beats per minute, without ST segment change.",
+    "question": "What is the patient's CHA2DS2-VASc Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+    "gold_unit": "points",
+    "gold_answer": 4.0,
+    "lower": 4.0,
+    "upper": 4.0,
+    "gold_entities": {
+      "sex": "Female",
+      "age": [
+        56,
+        "years"
+      ],
+      "Vascular disease history": true,
+      "Diabetes history": true,
+      "Hypertension history": true
+    },
+    "gold_explanation": "The criteria for the CHA2DS2-VASc score are listed below:\n\n1. Age: < 65 years = 0 points, 65-74 years = +1 point, ≥ 75 years = +2 points\n2. Sex: Female = +1 point, Male = 0 points\n3. Congestive Heart Failure (CHF) history: No = 0 points, Yes = +1 point\n4. Hypertension history: No = 0 points, Yes = +1 point\n5. Stroke, Transient Ischemic Attack (TIA), or Thromboembolism history: No = 0 points, Yes = +2 points\n6. Vascular disease history (previous myocardial infarction, peripheral artery disease, or aortic plaque): No = 0 points, Yes = +1 point\n7. Diabetes history: No = 0 points, Yes = +1 point\n\nThe CHA2DS2-VASc score is calculated by summing the points for each criterion.\n    \nThe current CHA2DS2-VASc score is 0.\nThe patient is 56 years old. Because the age is less than 65 years, no points are added to the current total, keeping the total at 0.\nThe patient's gender is female and so one point is added to the score, making the current total 0 + 1 = 1.\nBecause the congestive heart failure history is not specified in the patient note, we assume it is absent from the patient. Because the patient does not have congestive heart failure, no points are added to the current total, keeping the total at 1.\nThe patient history for hypertension is present. Because the patient has hypertension, one point is added to the score, making the current total 1 + 1 = 2.\nOne criteria of the CHA2DS2-VASc score is to check if the patient has had any history of stroke, transient ischemic attacks (TIA), or thromboembolism. Because stroke history is not specified in the patient note, we assume that it is absent from the patient. Because tia history is not specified in the patient note, we assume that it is absent from the patient. Because thromboembolism history is not specified in the patient note, we assume it to be absent. Because all of stroke, tia, or thromboembolism are absent, no points are added to score, keeping the score at 2.\nBased on the patient note, the patient history for vascular disease is present. Because the patient has vascular disease, one point is added to the score, making the current total 2 + 1 = 3. Based on the patient note, the patient history for diabetes is present. Because the patient has diabetes, one point is added to the score, making the current total 3 + 1 = 4.\nThe patient's CHA2DS2-VASc Score is 4."
+  },
+  "15": {
+    "id": "mc-0210",
+    "calculator_id": 15,
+    "calculator": "Child-Pugh Score for Cirrhosis Mortality",
+    "kind": "rule",
+    "note_id": "pmc-6715580-1",
+    "note_hash": "0c3307ee80c67df1c3f85a80e05b86e66ce6294e36d2e7c77d8cc6187f9234d9",
+    "note": "A 43-year-old male presented to the emergency department complaining of melena for three days.\nHe had two loose bowel movements with black tarry stool every day for the last three days with lightheadedness.\nHe denies any hematemesis, abdominal pain, or similar episodes in the past.\nPast medical history was remarkable for liver cirrhosis due to untreated hepatitis C and alcohol abuse. Family history was unremarkable.\nOn presentation, vitals revealed a blood pressure of 100/60 mmHg; pulse rate of 110 per minute, temperature of 98.5 Fahrenheit, and respiratory rate of 18 per minute. Physical exam revealed an ill-looking patient with mild confusion, pale conjunctiva, non-icterus sclera, mildly distended abdomen with no tenderness, and trace pitting edema in both legs.\nLaboratory findings displayed hemoglobin of 6.8 g/dL, leukocytes 10000/mm3, and platelet 105000/mm3. Serum biochemistry revealed creatinine 0.6 mg/dL, blood urea nitrogen 16 mg/dL, albumin 2.4 g/dL, total protein 4.8 g/dL, aspartate aminotransferase 34 IU/L, alanine aminotransferase 60 IU/L, alkaline phosphatase 95 IU/L, international normalized ratio 1.1 and total bilirubin 1.5 mg/dL.",
+    "question": "What is the patient's Child-Pugh Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+    "gold_unit": "points",
+    "gold_answer": 9.0,
+    "lower": 9.0,
+    "upper": 9.0,
+    "gold_entities": {
+      "international normalized ratio": 1.1,
+      "Ascites": "slight",
+      "Albumin": [
+        2.4,
+        "g/dL"
+      ],
+      "Bilirubin": [
+        1.5,
+        "mg/dL"
+      ],
+      "Encephalopathy": "Grade 1-2"
+    },
+    "gold_explanation": "The criteria for the Child-Pugh Score are listed below:\n\n1. Bilirubin (Total): <2 mg/dL (<34.2 μmol/L) = +1 point, 2-3 mg/dL (34.2-51.3 μmol/L) = +2 points, >3 mg/dL (>51.3 μmol/L) = +3 points\n2. Albumin: >3.5 g/dL (>35 g/L) = +1 point, 2.8-3.5 g/dL (28-35 g/L) = +2 points, <2.8 g/dL (<28 g/L) = +3 points\n3. INR: <1.7 = +1 point, 1.7-2.3 = +2 points, >2.3 = +3 points\n4. Ascites: Absent = +1 point, Slight = +2 points, Moderate = +3 points\n5. Encephalopathy: No Encephalopathy = +1 point, Grade 1-2 = +2 points, Grade 3-4 = +3 points \n(Grade 0: normal consciousness, personality, neurological examination, electroencephalogram\nGrade 1: restless, sleep disturbed, irritable/agitated, tremor, impaired handwriting, 5 cps waves\nGrade 2: lethargic, time-disoriented, inappropriate, asterixis, ataxia, slow triphasic waves\nGrade 3: somnolent, stuporous, place-disoriented, hyperactive reflexes, rigidity, slower waves\nGrade 4: unrousable coma, no personality/behavior, decerebrate, slow 2-3 cps delta activity)\n\nThe Child-Pugh Score is calculated by summing the points for each criterion.\n\nThe current child pugh score is 0.\nThe patient's INR is 1.1. Because the INR is less than 1.7, we add 1 to the score, making the current total 0 + 1 = 1.\nThe concentration of bilirubin is 1.5 mg/dL. Because the bilirubin concentration is less than 2 mg/dL, we add 1 to the score, making the current total 1 + 1 = 2.\nThe concentration of albumin is 2.4 g/dL. Because the albumin concentration is less than 2.8 g/dL, we add 3 points to the score, making the current total 2 + 3 = 5.\nThe patient's ascites state is determined to be 'slight' and so we add 2 points to the score, making the current total 5 + 2 = 7.\nThe encephalopathy state is determined to be 'Grade 1-2' and so we add two points to the score, making the current total 7 + 2 = 9.\nThe patient's child pugh score is 9."
+  },
+  "16": {
+    "id": "mc-0234",
+    "calculator_id": 16,
+    "calculator": "Wells' Criteria for DVT",
+    "kind": "rule",
+    "note_id": "pmc-4918891-1",
+    "note_hash": "a66b874be1188507f41eb679e3cfb7cdc07fef890a986a0fb22ca6da233109fa",
+    "note": "A 21-year-old male with a history of asthma and reactive airway disease since childhood, without recent hospitalizations and no prior ICU stays or intubations, was scheduled to undergo left shoulder arthroscopy and labral repair surgery at our institution. He had no known allergies. On physical examination, he was 188 cm and 100 kg (body mass index: 28.3) with a Mallampati score of 2, his lungs were clear to auscultation bilaterally without wheezes, and he had a regular rate and rhythm on a benign cardiac examination. The patient expressed his desire to be “asleep” throughout the duration of the surgery.\nIntravenous (IV) access was obtained and 2 mg of midazolam with 50 mcg of fentanyl was administered. We performed a left interscalene and T2 nerve block and maintained anesthesia with a ketamine–propofol infusion. A total of 25 mL of 0.5% ropivacaine and 15 mL of 1.5% mepivacaine were injected around the trunks of the brachial plexus. An additional 7 mL of 1.5% mepivacaine was used for the T2 nerve block.\nThe patient was then brought into the operative suite, where standard American Society of Anesthesiologists (ASA) monitors and a nasal cannula were attached. Then, 3 mg of midazolam was administered for anxiolysis, anterograde amnesia, and prophylaxis against potential emergence delirium. The patient was positioned in the beach chair position (BCP), and a propofol infusion at 70 mcg/kg per minute was started with a low background dose of ketamine at 0.2 mg/kg per hour. During the case, the patient was administered an additional 30 mg of IV ketamine in 10 mg aliquots and an initial 30 mg dose of ketorolac toward the end of the procedure for multimodal pain control. At the end of the surgery, 4 mg of IV ondansetron was given; then, the patient woke up calm with no signs of emergence delirium, with adequate analgesia, and with no nausea. Postoperatively, the patient was transferred to the post-anesthesia care unit (PACU), where he was discharged home an hour and a half later after achieving PACU discharge criteria. Columbia University Privacy Office Guidelines do not require Institutional Review Board approval for single case reports as they do not constitute the federal definition of research. Columbia University Medical Center waived the requirements for obtaining written informed consent for single patient case reports. Verbal consent was obtained from the patient for use of this case report.",
+    "question": "What is the patient's score of Wells' criteria for Deep Vein Thrombosis? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+    "gold_unit": "points",
+    "gold_answer": 1.0,
+    "lower": 1.0,
+    "upper": 1.0,
+    "gold_entities": {
+      "Alternative diagnosis to Deep Vein Thrombosis as likely or more likely": false,
+      "Bedridden recently >3 days": false,
+      "Previously documented Deep Vein Thrombosis": false,
+      "Major surgery within 12 weeks": true
+    },
+    "gold_explanation": "The criteria for the Wells' Criteria for Deep Vein Thrombosis (DVT) score are listed below:\n\n1. Active cancer (treatment or palliation within 6 months): No = 0 points, Yes = +1 point\n2. Bedridden recently >3 days or major surgery within 12 weeks: No = 0 points, Yes = +1 point\n3. Calf swelling >3 cm compared to the other leg (measured 10 cm below tibial tuberosity): No = 0 points, Yes = +1 point\n4. Collateral (nonvaricose) superficial veins present: No = 0 points, Yes = +1 point\n5. Entire leg swollen: No = 0 points, Yes = +1 point\n6. Localized tenderness along the deep venous system: No = 0 points, Yes = +1 point\n7. Pitting edema, confined to symptomatic leg: No = 0 points, Yes = +1 point\n8. Paralysis, paresis, or recent plaster immobilization of the lower extremity: No = 0 points, Yes = +1 point\n9. Previously documented DVT: No = 0 points, Yes = +1 point\n10. Alternative diagnosis to DVT as likely or more likely: No = 0 points, Yes = -2 points\n\nThe total score is calculated by summing the points for each criterion.\n    \nThe current Well's DVT Score is 0.\nThe issue,'active cancer,' is missing from the patient note and so the value is assumed to be absent from the patient. Hence, a point should not be given, and so total remains at 0.\nFrom the patient's note, the criterion, 'bedridden recently >3 days,' is absent. From the patient's note, the criterion, 'major surgery within 12 weeks,' is present. Based on the Well's DVT rule, at least one of the criteria, 'bedridden recently >3 days' or 'major surgery within 12 weeks' must be true for this criteria to be met for the score to increase by 1. Because this is the case, we incease the score by one making the total 0 + 1 = 1.\nThe issue,'calf swelling >3 cm compared to the other leg,' is missing from the patient note and so the value is assumed to be absent from the patient. Hence, a point should not be given, and so total remains at 1.\nThe issue,'collateral (nonvaricose) superficial veins present,' is missing from the patient note and so the value is assumed to be absent from the patient. Hence, a point should not be given, and so total remains at 1.\nThe issue,'entire leg swollen,' is missing from the patient note and so the value is assumed to be absent from the patient. Hence, a point should not be given, and so total remains at 1.\nThe issue,'localized tenderness along the deep venous system,' is missing from the patient note and so the value is assumed to be absent from the patient. Hence, a point should not be given, and so total remains at 1.\nThe issue,'pitting edema, confined to symptomatic leg,' is missing from the patient note and so the value is assumed to be absent from the patient. Hence, a point should not be given, and so total remains at 1.\nThe issue,'paralysis, paresis, or recent plaster immobilization of the lower extremity,' is missing from the patient note and so the value is assumed to be absent from the patient. Hence, a point should not be given, and so total remains at 1.\nThe issue,'previously documented DVT,' is missing from the patient note and so the value is assumed to be absent from the patient. Hence, a point should not be given, and so total remains at 1.\nFrom the patient's note, the criterion, 'alternative diagnosis to DVT as likely or more likely,' is absent. Hence, a point should not be given, and so total remains at 1.\nThe Well's DVT score for the patient is 1."
+  },
+  "17": {
+    "id": "mc-0241",
+    "calculator_id": 17,
+    "calculator": "Revised Cardiac Risk Index for Pre-Operative Risk",
+    "kind": "rule",
+    "note_id": "pmc-8604462-1",
+    "note_hash": "ebc13d731ee22cee7a3954f78e3fae3c33af3eeb0a5dd0c91a8abda5ca3bcd81",
+    "note": "A 62-year-old male woke up in the middle of the night with 10/10 substernal chest pain and tightness, non-radiating, which lasted for one hour and was associated with palpitations and shortness of breath, with no aggravating or alleviating factors. His chronic medical problems included essential hypertension, benign prostate hypertrophy, nicotine-dependent tobacco abuse with 42-pack-year, and remote history of bladder cancer which had been cured and currently tumor free. Six weeks ago, he developed a dry cough; 2 weeks ago, he presented to a walk-in clinic where chest x-ray and follow up CT chest with IV contrast revealed a right upper lobe mass, concerning for primary lung cancer. He endorsed 10 kg unintentional weight loss despite the same oral intake over 2 months. He denied a history of coronary artery disease, exertional chest pain, or shortness of breath. On admission, vital signs demonstrated temperature 99°F, pulse 101 bpm, respiration 19 per minute, BP 117/79 mmHg, SpO2 98% on 2 L nasal cannula of oxygen. Physical exam was unremarkable, including regular cardiac rhythm, S1 and S2 are present, no heart murmur or friction rub.\nLaboratory studies showed WBC 13.2 × 103/μL, hemoglobin 12.8 g/dL, hematocrit 38.4%, platelet 246 × 103/μL; potassium 4.4 mEq/L, BUN 13 mg/dL, creatinine 0.88 mg/dL; Calcium 10.7 mg/dL; Magnesium 2.2 mg/dL; Total bilirubin 0.7 mg/dL, AST 15 U/L, ALT 9 U/L, ALP 126 U/L, total protein 7.2 g/dL, albumin 3.7 g/dL; LDH 707 IU/L (reference range, 100–245 IU/L); First set of troponin I, <0.01 ng/dL, 2nd set <0.01 ng/dL 7 hours later, 0.023 ng/dL 24 hours later; Triglycerides 79 mg/dL, total cholesterol 152 mg/dL, HDL 30 mg/dL, LDL 106 mg/dL.\nCT chest with IV contrast 2 weeks prior to presentation showed spiculated right upper lobe masses of 2.4 × 1.7 cm and 2.7 × 1.7 cm; superior mediastinum mass of 5.4 × 4.1 cm, large right hilar mass of 5.5 × 3.7 cm with post-obstructive atelectasis or pneumonia; extensive mediastinal lymphadenopathy with narrowing of the superior vena cava likely representing primary lung cancer; small or moderate pericardial effusion; left adrenal nodule suspicious for metastasis. CTA chest on admission showed no evidence of pulmonary embolus; increased pericardial effusion.\nOn admission, ECG showed sinus rhythm, heart rate 95 bpm, ST elevation at lead II, aVF and III, no Q wave, with ST depression at lead aVR and V1 (). Prior ECG available 5 years ago revealed normal sinus rhythm without ST-T changes (not shown). The patient was diagnosed with presumed acute inferior STEMI, and underwent emergent cardiac catheterization, which revealed middle LAD 30% stenosis, middle LCx 30% stenosis, and distal RCA 30% stenosis, and no percutaneous intervention was warranted.\nThe initial differential diagnoses for the patient’s chest pain and inferior ST-elevation ECG changes included inferior STEMI, unstable angina, coronary artery spasm, regional pericarditis, and pulmonary embolism. Serial evaluation of troponin I, ECGs, and cardiac catheterization findings ruled out acute coronary syndrome. CT angiogram chest ruled out pulmonary embolism.\nOn hospital day 1, the patient developed positional pleuritic chest pain. Physical exam revealed no pericardial rub. Repeated ECG revealed persistent inferior lead ST elevations, no Q wave (not shown), similar to admission ECG; echocardiogram revealed pericardial effusion without tamponade. Laboratory studies showed WBC 13.2 × 103/μL, CRP 103.7 mg/L, and ESR 102 mm/hr. Given leukocytosis and elevated inflammatory markers of CRP and ESR, as well as echocardiogram evidence of pericardial effusion, the patient was diagnosed with inferior regional pericarditis.\nA pericardiocentesis was performed with 680 mL serous fluid drained on hospital day 1. The pericardial catheter was left in place for 48 hours, when the drainage was less than 25 ml/day, the catheter was removed. Pericardial effusion cell count and differential showed WBC 29,855/mm3, RBC 473/mm3, and neutrophil 83%, lymphocytes 7%, monocyte 10%; pH 7.5, glucose 97 g/dL, triglycerides 25 mg/dL, cholesterol 98 mg/dL, protein 4.9 g/dL, LDH 896 IU/L.\nPericardial fluid culture revealed no bacterial, fungal or mycobacterial growth; Cytopathology showed atypical inflammatory cells and favor reactive, no malignant cells. The patient was treated with colchicine and ibuprofen, and his pleuritic chest pain resolved in 2 days. Patient was continued on colchicine and ibuprofen on discharge. Two weeks later, repeated ECG revealed normalized ST waves (not shown); repeat CT chest without contrast revealed significant improvement in the pericardial effusion.\nAs for patient’s newly diagnosed lung cancer, lung cancer staging revealed brain metastasis by MRI brain, and hepatic and bilateral adrenal metastasis by CT abdomen and pelvis. Bronchoscopy showed complete obstruction right upper lobe bronchus just distal to its origin by submucosal and mucosal infiltration of tumor. Biopsy and surgical pathology revealed poorly differentiated carcinoma.",
+    "question": "What is the patient's score of the Revised Cardiac Risk Index for Pre-Operative Risk? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+    "gold_unit": "points",
+    "gold_answer": 0.0,
+    "lower": 0.0,
+    "upper": 0.0,
+    "gold_entities": {
+      "History of ischemic heart disease": false,
+      "age": [
+        62,
+        "years"
+      ],
+      "Pre-operative creatinine": [
+        0.88,
+        "mg/dL"
+      ]
+    },
+    "gold_explanation": "The criteria for the Revised Cardiac Risk Index (RCRI) are listed below:\n\n1. Elevated-risk surgery (intraperitoneal, intrathoracic, or suprainguinal vascular): No = 0 points, Yes = +1 point\n2. History of ischemic heart disease (history of myocardial infarction, positive exercise test, current chest pain due to myocardial ischemia, use of nitrate therapy, or ECG with pathological Q waves): No = 0 points, Yes = +1 point\n3. History of congestive heart failure (pulmonary edema, bilateral rales or S3 gallop, paroxysmal nocturnal dyspnea, or chest x-ray showing pulmonary vascular redistribution): No = 0 points, Yes = +1 point\n4. History of cerebrovascular disease (prior transient ischemic attack or stroke): No = 0 points, Yes = +1 point\n5. Pre-operative treatment with insulin: No = 0 points, Yes = +1 point\n6. Pre-operative creatinine >2 mg/dL (176.8 μmol/L): No = 0 points, Yes = +1 point\n\nThe total score is calculated by summing the points for each criterion.\n\nThe current cardiac risk index is 0.\nThe patient note does not mention anything about an elevated risk surgery and is assumed to be absent. This means that the total score remains unchanged at 0.\nBased on the patient note, a history of ischemetic heart disease is determined to be absent for the patient. This means that the total score remains unchanged at 0.\nThe patient note does not mention anything about a history of congestive heart failure and is assumed to be absent. This means that the total score remains unchanged at 0.\nThe patient note does not mention anything about a history of cerebrovascular disease and is assumed to be absent. This means that the total score remains unchanged at 0.\nThe patient note does not mention anything about a pre-operative insulin treatment and is assumed to be absent. This means that the total score remains unchanged at 0.\nThe concentration of Pre-Operative Creatinine is 0.88 mg/dL. The patient's pre-operative creatinine is less than or equal to 2 mg/dL, so we keep the score the same at 0.\n\nThe cardiac risk index score is 0."
+  },
+  "20": {
+    "id": "mc-0314",
+    "calculator_id": 20,
+    "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis",
+    "kind": "rule",
+    "note_id": "usmle-9610",
+    "note_hash": "22ae9b69e5fb0a81476c912dea532dac2296f2d96235a18c2e797cc3b0d44aca",
+    "note": "A 64-year-old woman presents to the physician with fever and sore throat for 2 days. She was diagnosed with rheumatoid arthritis 15 years ago. She has had several flares necessitating admission to the hospital in recent years. She has developed deformity in her joints despite aggressive therapy. She is a candidate for surgical correction. Her temperature is 38.2°C (100.9°F), and the rest of her vital signs are stable. Physical examination of the hands reveals multiple swan-neck, boutonniere, and Z-line deformities. Ulnar deviation is evident in both hands. She has flat feet. There are 3 firm, nontender nodules palpated around the right elbow and one on the left Achilles tendon. The spleen is palpated 5 cm below the costal margin with a percussion span of 15 cm. Lymphadenopathy is absent on exam.",
+    "question": "What is the patient's Centor Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+    "gold_unit": "points",
+    "gold_answer": 1.0,
+    "lower": 1.0,
+    "upper": 1.0,
+    "gold_entities": {
+      "age": [
+        64,
+        "years"
+      ],
+      "Temperature": [
+        38.2,
+        "degrees celsius"
+      ],
+      "Tender/swollen anterior cervical lymph nodes": false
+    },
+    "gold_explanation": "The criteria listed in the Centor Score formula are listed below:\n\n1. Age: 3-14 years = +1 point, 15-44 years = 0 points, ≥45 years = -1 point\n2. Exudate or swelling on tonsils: No = 0 points, Yes = +1 point\n3. Tender/swollen anterior cervical lymph nodes: No = 0 points, Yes = +1 point\n4. Temperature >38°C (100.4°F): No = 0 points, Yes = +1 point\n5. Cough: Cough present = 0 points, Cough absent = +1 point\n\nThe Centor score is calculated by summing the points for each criterion.\n    \nThe current Centor score is 0.\nThe patient is 64 years old. Because the age is greater than 44 years, we decrease the score by one point, making the score 0 - 1 = -1.\nThe patient's temperature is 38.2 degrees celsius. The patient's temperature is greater than 38 degrees Celsius, and so we add one point to the score, making the current score -1 + 1 = 0.\nThe patient note does not mention details about the patient coughing and so we assume it to be absent. Hence, we add 1 point to the score, making the current score 0 + 1 = 1.\nThe patient note reports 'tender/swollen anterior cervical lymph nodes' as absent for the patient. Hence, we do not change the score, keeping the current score at 1.\nThe patient note does not mention details about 'exudate or swelling on tonsils' and so we assume it to be absent. Hence, we do not change the score, keeping the current score at 1.\nHence, the Centor score for the patient is 1."
+  },
+  "21": {
+    "id": "mc-0862",
+    "calculator_id": 21,
+    "calculator": "Glasgow Coma Score (GCS)",
+    "kind": "rule",
+    "note_id": "14",
+    "note_hash": "64fa869a8c3c5722ed351f084bb99fa21671ddf9449b9a0199a26dc69fd4522d",
+    "note": "A 50-year-old female was brought to the emergency department by her family after being found unresponsive in her living room. Her husband reported that she had been complaining of severe dizziness and headaches throughout the day. She had no significant past medical history and was not on any regular medications. There was no reported use of illicit substances or alcohol. Upon arrival at the emergency room, the patient was unresponsive to verbal commands. Despite several attempts to communicate, she did not open her eyes at all. However, when asked about her condition, she articulated her responses clearly, indicating awareness of her surroundings and orientation to person, place, and time. She was able to follow simple verbal commands, such as raising her hand or squeezing the examiner's fingers when asked. Vital signs recorded were a blood pressure of 135/80 mmHg, heart rate of 88 beats per minute, respiratory rate of 20 breaths per minute, and temperature of 36.6°C (97.9°F). Her oxygen saturation level was 97% on room air. A focused neurological examination revealed equal and reactive pupils of 3 mm in size. There were no signs of bruising, lacerations, or swelling on her head or neck. Cardiovascular examination indicated normal heart sounds without any murmurs or irregularities. Lung auscultation demonstrated clear bilateral breath sounds. The abdominal examination was benign with no tenderness, guarding, or distension noted. Extremities were warm and well-perfused, with palpable pulses throughout. Given the clinical presentation, differential diagnoses included potential intracranial pathology, metabolic derangements, or toxic exposure. Immediate laboratory investigations were ordered, including complete blood count, comprehensive metabolic panel, and toxicology screening. Moreover, given the sudden onset of symptoms and the risk of acute conditions like stroke or hemorrhage, an urgent non-contrast CT scan of the brain was initiated. Continuous monitoring was established to assess and manage the patient’s condition dynamically. The patient’s family was kept informed about her status and the essential diagnostic steps being undertaken. Their cooperation in providing additional information and support was acknowledged as critical in managing the patient’s condition.",
+    "question": "What is the patient's Glasgow Coma Score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+    "gold_unit": "points",
+    "gold_answer": 12.0,
+    "lower": 12.0,
+    "upper": 12.0,
+    "gold_entities": {
+      "Best eye response": "no eye opening",
+      "Best motor response": "obeys commands",
+      "Best verbal response": "oriented"
+    },
+    "gold_explanation": "The Glasgow Coma Scale (GCS) for assessing a patient's level of consciousness is shown below:\n    \n1. Best Eye Response: Spontaneously = +4 points, To verbal command = +3 points, To pain = +2 points, No eye opening = +1 point\n2. Best Verbal Response: Oriented = +5 points, Confused = +4 points, Inappropriate words = +3 points, Incomprehensible sounds = +2 points, No verbal response = +1 point\n3. Best Motor Response: Obeys commands = +6 points, Localizes pain = +5 points, Withdrawal from pain = +4 points, Flexion to pain = +3 points, Extension to pain = +2 points, No motor response = +1 point\n\nFor each criteria, if a patient's value is not mentioned/not testable in the note, we assume that it gets the full score for that attribute.  The total GCS score is calculated by summing the points for each of the three components.\n    \nThe current glasgow coma score is 0.\nBased on the patient note, the best eye response for the patient is 'no eye opening', and so we add 1 point making the current total 0 + 1 = 1.\nBased on the patient note, the best verbal response for the patient is 'oriented', and so we add 5 points making the current total 1 + 5 = 6.\nBased on the patient note, the best motor response for the patient is 'obeys commands', and so we add 6 points making the current total 6 + 6 = 12.\nHence, the patient's glasgow coma score is 12."
+  },
+  "45": {
+    "id": "mc-0519",
+    "calculator_id": 45,
+    "calculator": "CURB-65 Score for Pneumonia Severity",
+    "kind": "rule",
+    "note_id": "usmle-1885",
+    "note_hash": "51687fbc95df4c4fdaf1d076f0d32967f2ce783b52f9e52ac0e877fc8e913e7a",
+    "note": "A 52-year-old man is brought to the emergency department with dry cough, shortness of breath, and low-grade fever that began 6 days ago. He also reports that he has had 3 episodes of watery diarrhea per day for the last 2 days. He appears slightly pale. His temperature is 38.0°C (100.4°F), pulse is 65/min, respirations are 15/min, and blood pressure is 140/78 mm Hg. Diffuse crackles are heard over bibasilar lung fields. Laboratory studies show:\nHemoglobin 13.8 g/dL\nLeukocyte count 16,000/mm3\nPlatelet count 150,000/mm3\nSerum\nNa+ 131 mEq/L\nCl- 102 mEq/L\nK+ 4.7 mEq/L\nHCO3- 26 mEq/L\nUrea nitrogen 18 mg/dL\nCreatinine 1.2 mg/dL\nAn x-ray of the chest shows patchy infiltrates in both lungs.",
+    "question": "What is the patient's CURB-65 score? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+    "gold_unit": "points",
+    "gold_answer": 0.0,
+    "lower": 0.0,
+    "upper": 0.0,
+    "gold_entities": {
+      "Systolic Blood Pressure": [
+        140.0,
+        "mm hg"
+      ],
+      "respiratory rate": [
+        15.0,
+        "breaths per minute"
+      ],
+      "Blood Urea Nitrogen (BUN)": [
+        18.0,
+        "mg/dL"
+      ],
+      "Diastolic Blood Pressure": [
+        78.0,
+        "mm hg"
+      ],
+      "age": [
+        52,
+        "years"
+      ]
+    },
+    "gold_explanation": "The CURB-65 Score criteria are listed below:\n\n1. Confusion: No = 0 points, Yes = +1 point\n2. BUN >19 mg/dL (>7 mmol/L urea): No = 0 points, Yes = +1 point\n3. Respiratory Rate ≥30: No = 0 points, Yes = +1 point\n4. Systolic BP <90 mmHg or Diastolic BP ≤60 mmHg: No = 0 points, Yes = +1 point\n5. Age ≥65: No = 0 points, Yes = +1 point\n\nThe total CURB-65 score is calculated by summing the points for each criterion.\n\nThe CURB-65 score is current at 0 points.\nThe patient is 52 years old. The patient's age is less than 65 years, and so we add 0 points to the score, keeping the current total at 0.\nWhether the patient has confusion is not reported in the note. Hence, we assume this to be false, and so 0 points are added to the score, making the current total 0.\nThe concentration of BUN is 18.0 mg/dL. The patient's BUN concentration is less than or equal to 19 mg/dL and so 0 points are added to score, keeping the current total at 0.\nThe patient's respiratory rate is 15 breaths per minute. Because the respiratory rate is less than 30 breaths per minute, 0 points are added to the score, keeping the current total at 0.\nThe patient's systiolic blood pressure is 140 mm Hg. The patient's diastolic blood pressure is 78 mm Hg. For a point a point to be added, the systiolic blood pressure must be less than 90 mm Hg or the diastolic blood pressure must be less than or equal to 60 mm Hg. Because neither of these statements are true, 0 points are added to score, keeping the current total to 0.\nThe patient's CURB-65 score is 0."
+  },
+  "51": {
+    "id": "mc-0594",
+    "calculator_id": 51,
+    "calculator": "SIRS Criteria",
+    "kind": "rule",
+    "note_id": "pmc-6029742-1",
+    "note_hash": "b2f17f331c5e5577b32214790c50ad031788793562c7bf761764a1bfac8f36e7",
+    "note": "A 25-year-old man with no past medical history presented to the emergency department (ED) with two days of intractable vomiting, increasing confusion, and progressive difficulty breathing. The patient denied tobacco or recreational drug use.\nUpon arrival to the ED, vital signs were within normal range with a blood pressure of 123/61 mmHg, a temperature of 36.8 degree Celsius, a heart rate of 92 beats per minute, and a respiratory rate of 19 respirations per minute. The physical exam showed an obese, lethargic patient, responsive to verbal stimuli. The lung, heart, and abdomen exam were unremarkable and there was no neck crepitus noted. The laboratory evaluation showed leukocytosis of 25.96 x 1000/mm3, elevated creatinine of 2.17 mg/dL, hyperglycemia of 836 mg/dL, hyponatremia of 128 mEq/L, hyperkalemia of 5.2 mEq/L, and bicarbonate of 5 mEq/L. The anion gap was 25 and a venous blood gas showed a pH of 6.91. Urinalysis was positive for 2+ ketones and 1+ protein.\nThe patient was admitted to the intensive care unit with a new diagnosis of diabetes mellitus complicated with DKA. Intravenous normal saline, bicarbonate, and insulin drip were initiated. The chest X-ray on admission suggested findings compatible with pneumomediastinum (Figure ). Chest computed tomography (CT) was obtained and reaffirmed the findings (Figures -). Pneumomediastinum in the setting of intractable vomiting was worrisome for esophageal rupture and since our facility was not staffed to manage this clinical entity, the patient was emergently transferred to another facility. The patient was treated conservatively with analgesia and respiratory support and was discharged several days later without any complications.",
+    "question": "What are the number of SIRS critiera met by the patient? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+    "gold_unit": "points",
+    "gold_answer": 2.0,
+    "lower": 2.0,
+    "upper": 2.0,
+    "gold_entities": {
+      "Temperature": [
+        36.8,
+        "degrees celsius"
+      ],
+      "Heart Rate or Pulse": [
+        92.0,
+        "beats per minute"
+      ],
+      "respiratory rate": [
+        19.0,
+        "breaths per minute"
+      ],
+      "White blood cell count": [
+        25960.0,
+        "mm^3"
+      ]
+    },
+    "gold_explanation": "The rules for SIRS Criteria are listed below:\n    \n1. Temperature >38°C (100.4°F) or <36°C (96.8°F): No = 0 points, Yes = +1 point\n2. Heart rate >90: No = 0 points, Yes = +1 point\n3. Respiratory rate >20 or PaCO₂ <32 mm Hg: No = 0 points, Yes = +1 point\n4. White blood cell count (WBC) >12,000/mm³, <4,000/mm³, or >10% bands: No = 0 points, Yes = +1 point\n\nThe total number of criteria met is taken by summing the score for each criteria.\n    \nThe current count of SIRS criteria met is 0.\nThe patient's temperature is 36.8 degrees celsius. Because the temperature is between 36 and 38 degrees celsius, this does not meet SIRS criteria for temperature, and so the current total remains at 0.\nThe patient's heart rate is 92.0 beats per minute. Because the heart rate is greater than 90 beats per minute, this meets SIRS criteria and so we increment the criteria count by 1 making the current total 0 + 1 = 1.\nThe patient's concentration of white blood cell is 25960.0 count/mm^3. Because the white blood cell count is greater than 12000 count per mm^3, we increment the criteria count by 1 making the current total 1 + 1 = 2.\nThe final SIRS criteria is whether the patient has a respiratory rate of more than 20 breaths per minute or if the patient's PaCO₂ partial pressure is less than 32 mm Hg. The patient's respiratory rate is 19.0 breaths per minute, which is less or equal to than 20 breaths per min. The patient's PaCO₂ partial pressure is not provided and so we assume that the patient's partial pressure is greater than or equal to 32 mm Hg. Neither criteria met and so keep the current total at 2.\nHence, the the number of SIRS criteria met by the patient is 2."
+  },
+  "5": {
+    "id": "mc-0067",
+    "calculator_id": 5,
+    "calculator": "Mean Arterial Pressure (MAP)",
+    "kind": "numerical",
+    "note_id": "usmle-529",
+    "note_hash": "0f4d8fe2fa98518737eb412d069b637da1e5383398df13dc4a7450a7b5aebc0d",
+    "note": "A 47-year-old female comes to the emergency department because of increasing back pain for the past 2 weeks. She is unable to perform her daily chores. One month ago, she fell and hurt her back while working outside in the garden. The pain subsided with over-the-counter acetaminophen. She underwent a left mastectomy 1 year ago for breast cancer. She has type 2 diabetes mellitus. Current medications include metformin, sitagliptin, and a multivitamin. She appears uncomfortable. Her temperature is 38.9°C (102.0°F), pulse is 101/min, and blood pressure is 110/80 mm Hg. Examination of the back shows thoracic vertebral tenderness. She has mild stiffness on neck flexion. Muscle strength is decreased in the lower extremities. Deep tendon reflexes are 2+ bilaterally. Sensation to pain, fine touch, temperature, and proprioception is intact. Her hemoglobin concentration is 13.1 g/dL and leukocyte count is 19,300/mm3.",
+    "question": "What is patient's mean arterial pressure in mm Hg? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+    "gold_unit": "mm Hg",
+    "gold_answer": 90.0,
+    "lower": 85.5,
+    "upper": 94.5,
+    "gold_entities": {
+      "Diastolic Blood Pressure": [
+        80.0,
+        "mm hg"
+      ],
+      "Systolic Blood Pressure": [
+        110.0,
+        "mm hg"
+      ]
+    },
+    "gold_explanation": "Calculator ID 5. Apply the calculator convention stated in the question. Reference input values and units: {\"Diastolic Blood Pressure\": [80.0, \"mm hg\"], \"Systolic Blood Pressure\": [110.0, \"mm hg\"]}. Normalize units before substitution. Formula: (SBP + 2*DBP)/3, pressures in mm Hg. Independently recomputed value: 90; dataset answer: 90.0. Values per µL or mm^3 for platelets are divided by 1000 to get 10^9/L; height in cm is divided by 100 for BMI. Sodium mmol/L and mEq/L are numerically equivalent for monovalent sodium."
+  },
+  "6": {
+    "id": "mc-0095",
+    "calculator_id": 6,
+    "calculator": "Body Mass Index (BMI)",
+    "kind": "numerical",
+    "note_id": "pmc-5244004-1",
+    "note_hash": "56ebc03a4a473124543e23a66b811202c1870f5afb5bba92eeb1c4b94ee88e3d",
+    "note": "The patient was a 17-year-old boy with hypopituitarism, autism, and a history of septooptic dysplasia with whom communication was difficult. He was receiving treatment with dexamethasone 100 μg and Levothyroxine sodium 1 mg per day. One month before admission, he experienced a fall, which resulted in difficulty in walking. At the first visit to the physician, because he could not describe any symptoms, only knee radiography was performed and there were no abnormalities. The pain in his right leg progressively worsened and he presented to our outpatient clinic after one month.\nOn physical examination, the patient was slightly obese with a height of 161 cm and weight of 63 kg noted. His right leg was externally rotated, and he hesitated to stand up. The passive range of motion of the right hip was limited, especially in adduction and internal rotation (right/left; flexion 90°/120°, extension 10°/10°, abduction 45°/45°, adduction 0°/30°, external rotation 60°/45°, and internal rotation 10°/30°). Serum insulin-like growth factor-1 and insulin-like growth factor-binding protein 3 levels were low, but free triiodothyronine, free thyroxine, and adrenocorticotropic hormone levels were almost normal. The radiographs of the hip joints showed a right atypical slippage of the epiphysis (). Both neck shaft angles were large (right/left; 160°/155°) and lateral tilts of the physis were normal on intact side (right/left; 35° lateral/13° medial). Three-dimensional computed tomography (3D CT) images showed lateral epiphyseal displacement on the right femoral head (Figures and ), indicating valgus SCFE.\nThe patient underwent in situ pinning of the hip on both sides. On the right side, the procedure was performed through a limited 5 cm longitudinal incision, positioned medially on the thigh (frog position), posterior to the femoral neurovascular bundle. A single φ5.5 mm partially threaded cannulated screw (Meira, Japan) was placed across the physis. In situ pinning on the left side was performed as a prophylactic pinning because of endocrine abnormalities (). Postoperatively, we had difficulty in limiting weight bearing due to communication difficulties.\nOne month after surgery, he could walk better than before the operation. At the 1-year follow-up, he could walk without difficulty and there were no signs of pain. The passive range of motion of the right hip joint was slightly improved in flexion, adduction, and internal rotation (100°, 20°, and 20°, resp.). Radiographs showed no signs of avascular necrosis or chondrolysis of the epiphysis; the physis showed no signs of early partial closure.",
+    "question": "What is the patient's body mass mass index (BMI)? Your answer should be in terms of kg/m². You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+    "gold_unit": "kg/m^2",
+    "gold_answer": 24.30462,
+    "lower": 23.08939,
+    "upper": 25.51985,
+    "gold_entities": {
+      "height": [
+        161.0,
+        "cm"
+      ],
+      "weight": [
+        63.0,
+        "kg"
+      ]
+    },
+    "gold_explanation": "Calculator ID 6. Apply the calculator convention stated in the question. Reference input values and units: {\"height\": [161.0, \"cm\"], \"weight\": [63.0, \"kg\"]}. Normalize units before substitution. Formula: weight_kg/(height_m**2). Independently recomputed value: 24.30461788; dataset answer: 24.30462. Values per µL or mm^3 for platelets are divided by 1000 to get 10^9/L; height in cm is divided by 100 for BMI. Sodium mmol/L and mEq/L are numerically equivalent for monovalent sodium."
+  },
+  "7": {
+    "id": "mc-0120",
+    "calculator_id": 7,
+    "calculator": "Calcium Correction for Hypoalbuminemia",
+    "kind": "numerical",
+    "note_id": "pmc-7001129-1",
+    "note_hash": "230e9bf55dd4141b78c6bc43cc3da996c7b2adc7be57fe3f0fa1f436895efd3d",
+    "note": "An 80-year-old Caucasian man presented to the emergency department (ED) with one-week history of ankle swelling and abdominal pain. Per family members, the patient was confused, having memory loss, increased urinary frequency, cough, mild dyspnea and generalized weakness. He had a prior history of hypertension, dyslipidemia, chronic kidney disease stage III, benign prostatic hyperplasia, transitional cell carcinoma of the urinary bladder for which he underwent transurethral resection of bladder tumor. His prescription medications included tamsulosin, benazepril, simvastatin and a multivitamin. He denied any intake of calcium supplements, antacids or vitamin D. He was a former alcoholic (quit 10 years ago) and an ex-smoker (quit 15 years ago) and denied any illicit drug use. He was recently discharged from the hospital a week ago when he was admitted for acute kidney injury, secondary to dehydration.\nAll his initial vital signs in the emergency department were within normal limits and physical examination was unremarkable with the exception of 2+ pitting pedal edema bilaterally up to mid-shins. Serum chemistries showed a white blood cell count (WBC) 15,600/mm3 (normal: 4,000-11,000), neutrophil count 12,900/mm3 (normal: 1500-8,000), monocytes 1300/mm3 (normal: 200-1000), hemoglobin 17.4 g/dl (normal: 13.5-17.0), red blood cell 5.78 million/mm3 (normal: 4.3-6.0), platelets 145,000/mm3 (normal: 150,000-450,000), blood urea nitrogen 31 mg/dl (normal: 7-20), creatinine 1.76 mg/dl (normal: 0.6-1.2), calcium 12.2 mg/dl (normal: 8.5-10.2), albumin 3.1 g/dl (normal: 3.5-5.5), total bilirubin 1.5 mg/dl (normal: 0.1-1.2), aspartate aminotransferase (AST) 73 IU/L (normal: <40), alanine aminotransferase (ALT) 33 IU/L (normal: <56), alkaline phosphatase (ALP) 218 IU/L (normal: 44-147), NT-proBNP 638 pg/ml (normal: <450) and serum procalcitonin 35.6 ng/ml (normal: <0.5).\nChest radiograph done in emergency department showed bilateral infrahilar and basilar subsegmental atelectasis though early infiltrate versus aspiration could not be ruled out. Ventilation-perfusion nuclear medicine scan showed low probability of pulmonary embolism. The patient was empirically started on piperacillin-tazobactam by ED physician for possible healthcare-associated pneumonia and admitted to the hospital for further care.\nSuspecting the possibility of congestive heart failure, the admitting physician started patient on intravenous furosemide, ordered an echocardiogram and added intravenous vancomycin for empiric coverage as well. Echocardiogram showed a normal ejection fraction of 60% with no valvular abnormalities. Nephrology service was consulted by the admitting physician for management of hypercalcemia. Nephrologist ordered studies to evaluate the cause of hypercalcemia, discontinued furosemide and gave calcitonin to treat hypercalcemia. Investigative workup for hypercalcemia revealed parathyroid hormone level < 6 pg/ml (normal: 15-65), 25-hydroxy vitamin D 45 ng/ml (normal: 30-100), 1, 25-dihydroxy vitamin D 17 pg/ml (normal: 18-72), angiotensin converting enzyme level 11 U/L (normal: 9-67), 24-hour urinary calcium excretion 153 mg/dl (normal: 50-300), normal IgA, IgG, IgM levels, serum protein electrophoresis showed hypoalbuminemia without any evidence of monoclonal protein, serum and urine immunofixation was negative. Ordered serum parathyroid hormone-related peptide (PTHrP) revealed elevated levels of 62 pg/ml (normal: 14-27 pg/ml). As hypercalcemia did not respond to calcitonin, the patient was given intravenous pamidronate (twice). As his leukocytosis continued to worsen (19,100/mm3) along with procalcitonin (38.15 ng/ml) despite being on broad-spectrum antibiotics for one-week, infectious diseases service was consulted and leukemia/lymphoma flow cytometry panel, peripheral blood smear was ordered to evaluate for hematologic malignancy. Infectious disease physician discontinued vancomycin and ordered Indium-111 labeled whole body WBC scan which showed no abnormal areas of increased tracer uptake to suggest a focus of infection. Leukemia/lymphoma flow cytometry was negative for any specific phenotypic abnormality. Peripheral blood smear showed presence of neutrophilia without any evidence of malignant leukocytes.\nMeanwhile, the patient went in to acute hypoxic respiratory distress with wheezing and so pulmonary service was consulted which transferred the patient to ICU, started him on intravenous methylprednisolone and initiated non-invasive positive pressure ventilation (bi-level positive airway pressure - BiPAP). As PTHrP had come back elevated, the patient underwent a CT scan of chest, abdomen and pelvis, which showed a hypodense mass in the right posterior lobe of liver measuring 9.3 cm x 8.3 cm in size with presence of moderate abdominal and severe pelvic ascites (Figure ). The patient underwent paracentesis with removal of 2.6 L of straw-colored fluid. Ascitic fluid did not show any malignant cells or evidence of spontaneous bacterial peritonitis. Ultrasound of the liver showed a 10.9-cm mass in the right lobe of liver along with portal vein occlusion. Hematology and oncology service was then consulted. Oncologist did not recommend anticoagulation for portal vein occlusion and ordered tumor markers evaluation which showed alpha-fetoprotein 14.7 ng/ml (normal: <8.7), CA 19-9 2907 U/ml (normal: < 35), carcinoembryonic antigen (CEA) 5.2 ng/ml (normal: <3.4). A possibility of hepatocellular carcinoma was discussed with the patient and he was scheduled to undergo CT-guided liver biopsy. Broad spectrum antibiotics were discontinued after 10 days of administration as they neither lowered procalcitonin nor WBC count. Blood, urine and other body fluid cultures remained negative during the entire hospital stay. Either partly because of being on intravenous steroids and/or due to underlying disease process, patient’s WBC count peaked at 40,100/mm3 during this hospital stay. Though he presented with polycythemia, his peak hemoglobin and hematocrit during admission was 19.7 g/dl and 57%. Serum erythropoietin level was found to be elevated 21.4 mIU/ml (normal: 2.6-18.5).\nPatient’s liver profile worsened during his ICU stay with serum bilirubin escalating up to 12 mg/dl, ALP 470 IU/L, AST 429 IU/L, ALT 362 IU/L, international normalized ratio (INR) 2.8, albumin 1.8. MRI liver/magnetic resonance cholangiopancreatography (MRCP) abdomen was ordered which did not show any evidence of biliary obstruction. Viral hepatitis panel came back negative as well. Liver biopsy revealed moderately differentiated ductal adenocarcinoma of hepatobiliary origin reported as primary intrahepatic cholangiocarcinoma under current clinical settings (Figure ). Immunohistochemical stains revealed CK Oscar(+), CK7(+) (Figure ), CK20(-) (Figure ), Villin(+) (Figure ), CDX2(-) (Figure ), TTF-1(-), Napsin A(-), PSA(-) and NKX3.1(-).\nOncology service recommended no chemotherapy at the moment as the patient was thought to be too frail. Three weeks after his admission to the hospital, his blood pressure dropped in ICU requiring initiation of norepinephrine infusion. A temporary hemodialysis catheter was inserted and sustained-low efficiency dialysis (SLED) was initiated as well. Given his dismal prognosis in the setting of malignancy and multi-organ failure, a detailed discussion was held with the patient and his family members when it was decided to proceed with comfort care options and hospice. The patient was discharged to hospice the following day.",
+    "question": "Using the Calcium Correction for Hypoalbuminemia formula, what is the patient's corrected calcium in mg/dL? Your may set your normal albumin concentration to be 4 g/dL. You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+    "gold_unit": "mg/dL",
+    "gold_answer": 12.92,
+    "lower": 12.274,
+    "upper": 13.566,
+    "gold_entities": {
+      "Albumin": [
+        3.1,
+        "g/dL"
+      ],
+      "Calcium": [
+        12.2,
+        "mg/dL"
+      ]
+    },
+    "gold_explanation": "Calculator ID 7. Apply the calculator convention stated in the question. Reference input values and units: {\"Albumin\": [3.1, \"g/dL\"], \"Calcium\": [12.2, \"mg/dL\"]}. Normalize units before substitution. Formula: calcium_mg_dL + 0.8*(4 - albumin_g_dL). Independently recomputed value: 12.92; dataset answer: 12.92. Values per µL or mm^3 for platelets are divided by 1000 to get 10^9/L; height in cm is divided by 100 for BMI. Sodium mmol/L and mEq/L are numerically equivalent for monovalent sodium."
+  },
+  "19": {
+    "id": "mc-0297",
+    "calculator_id": 19,
+    "calculator": "Fibrosis-4 (FIB-4) Index for Liver Fibrosis",
+    "kind": "numerical",
+    "note_id": "pmc-5842090-1",
+    "note_hash": "e7193a0b3567c88d10879bb40f240e238d50fd26e232644304c121423b62d028",
+    "note": "The patient's information released was permitted after discussion by the hospital ethics committee.\nA 66-year-old woman with recurrent intermittent upper quadrant abdominal pain visited our hospital for further evaluation and treatment. Physical examination and initial vital signs were as follows: body temperature, 37.0℃; pulse rate, 66 beats/min; respiratory rate, 18 breaths/min; and blood pressure, 140/90 mmHg. Her height and body weight were 158 cm and 66 kg. She had a 10-year history of hypertension with good blood pressure control from oral Valsartan (40 mg/day). Her familial history was unremarkable. Laboratory examinations showed a low white blood cell count of 3,920/µL, a hemoglobin level of 11.8 g/L, and a platelet count of 124,000/µL. The liver function test results were as follows: serum aspartate transaminase: 14 U/L; alanine transaminase: 19 U/L; alkaline phosphatase: 88 IU/L; gamma-glutamyl transferase: 16 U/L; total bilirubin: 4.05 µmol/L; albumin, 35.7 g/L; and international normalized ratio: 0.93. CA 19-9 and α-FP were assayed for a malignancy workup, with results of 16.35 U/mL and 2.61 ng/mL, respectively. The results for viral markers including HBV surface antigen and anti-HCV were negative. Abdominal CT revealed an atrophic left lobar and dilated bile duct with the middle hepatic vein close to the cystic lesion (). Abdominal MRCP revealed irregular intrahepatic bile duct dilatation (IHBDD) of the left lobe with the left hepatic duct obstructed, while the common bile duct and right intrahepatic bile duct were normal (). However, we found that the irregular cystic dilatation of the bile duct was limited to the left liver and contained stones inside the cysts. No obvious abnormal dilated bile duct was found in the right liver. The common bile duct and the hepatic duct were normal, and no obvious dilatation was found. This patient was diagnosed with Caroli disease (type V). The surgical indication for the patient was explicit. However, the treatment prescription required consideration of the cystic wall being adjacent to the middle hepatic vein, the left hepatic atrophy and structure disorder, and the observation that the left hepatic vein was not visible. Although complete resection of the cysts may be a curative treatment for unilobar Caroli disease, this treatment was impossible for this patient due to the close adherence of the middle hepatic vein to the cystic wall. Therefore, we decided to perform laparoscopic left LR for the patient, while preserving a partial cystic wall close to the middle hepatic vein.\nThe standard laparoscopic equipment used to perform laparoscopic hepatectomy included a 30° 5-mm laparoscope, a hook dissector, 5-mm laparoscopic forceps, a 5-mm atraumatic grasper, a 10-mm GIA (Johnson & Johnson Medical, Shanghai, China), 5-mm harmonic (Johnson & Johnson Medical) and 10-mm locking pliers.\nThe conventional fully laparoscopic multiport approach was adopted. The patient was placed in a supine position, and the surgeon stood on the right side. Under general anesthesia, five 5- to 10-mm incisions were made in a “U” configuration. Division of the liver parenchyma was performed with Harmonic or Endo-GIA. Large pedicles were stapled or clipped.\nUpon surgical exploration, the left lobe of the liver was found to be atrophied, and the right liver had developed compensatory hyperplasia with a red-brown and smooth surface. However, the left liver lobe was severely adherent. We gradually dissected the adhesion using harmonic pliers and exposed the atrophic left lobe (5 cm × 6 cm × 2 cm). The gallbladder was approximately 7 cm × 4 cm × 2 cm in size and was filled with bile and gallstones. Through intraoperative exploration, we confirmed the diagnosis of Caroli disease, limited to the left lobe of the liver. We obtained a biopsy from the edge of the lesion and performed a rapid intraoperative pathological examination to exclude malignant tumor. We then decided to perform a laparoscopic left liver and gallbladder resection. The difficulty was that the lesion was close to the middle hepatic vein. We opened the cysts and resected most of the lesion while retaining part of cystic wall close to the middle hepatic vein. After laparoscopic left half-liver and gallbladder resection, the liver lesion tissue and gallbladder were removed completely from the abdominal cavity. Histopathologic findings showed congenital dilatation of the intrahepatic bile ducts, confirming the preoperative diagnosis of Caroli disease (). Histopathology of the resected specimen revealed large, cystic dilations of the large intrahepatic bile ducts. This patient was seen regularly every 3 months at the outpatient department. There was no recurrence of abdominal pain, and no complications were discovered after 18 months of follow-up.",
+    "question": "What is the patient's score of the Fibrosis 4 Index? You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+    "gold_unit": "dimensionless",
+    "gold_answer": 1.70952,
+    "lower": 1.62404,
+    "upper": 1.795,
+    "gold_entities": {
+      "age": [
+        66,
+        "years"
+      ],
+      "Alanine aminotransferase": [
+        19.0,
+        "U/L"
+      ],
+      "Aspartate aminotransferase": [
+        14.0,
+        "U/L"
+      ],
+      "Platelet count": [
+        124000.0,
+        "µL"
+      ]
+    },
+    "gold_explanation": "Calculator ID 19. Apply the calculator convention stated in the question. Reference input values and units: {\"age\": [66, \"years\"], \"Alanine aminotransferase\": [19.0, \"U/L\"], \"Aspartate aminotransferase\": [14.0, \"U/L\"], \"Platelet count\": [124000.0, \"µL\"]}. Normalize units before substitution. Formula: age_years*AST_U_L/(platelets_10^9_L*sqrt(ALT_U_L)). Independently recomputed value: 1.709517243; dataset answer: 1.70952. Values per µL or mm^3 for platelets are divided by 1000 to get 10^9/L; height in cm is divided by 100 for BMI. Sodium mmol/L and mEq/L are numerically equivalent for monovalent sodium."
+  },
+  "26": {
+    "id": "mc-0383",
+    "calculator_id": 26,
+    "calculator": "Sodium Correction for Hyperglycemia",
+    "kind": "numerical",
+    "note_id": "pmc-8601313-1",
+    "note_hash": "55bebe4e13e709e3466d9bc5439d55697cd3bb86c2be0cbba44730c729f3b4cf",
+    "note": "A 52-year-old man with a history of alcohol-induced acute pancreatitis and diabetes mellitus was transferred to our hospital for treatment of sepsis and multiorgan failure associated with emphysematous pancreatitis.\nA day earlier, the patient was admitted to an outside hospital with fever and severe abdominal pain. Based on an abdominal computed tomography (CT) scan and laboratory findings, the patient was diagnosed with sepsis and multiorgan failure associated with emphysematous pancreatitis and subsequently transferred to our hospital for treatment.\nThe patient had a history of alcohol-induced acute pancreatitis event 2 years ago. He was also taking medications for diabetes and hypertension.\nThe patient was an alcohol abuser, but not a smoker. There was no significant medical history in the family.\nOn arrival, the patient was receiving inotropic agents and had a body temperature of 36.5°C, heart rate of 120 beats/min, and blood pressure of 80/50 mm Hg. The patient's mental status was confused. Physical examination revealed a rigid and distended abdomen, severe tenderness with muscle guarding upon palpation, and tympanic sounds with percussion. The examination was otherwise unremarkable.\nThe results of the complete blood count test were as follows: white blood cell count, 8.1 × 103/L; red blood cell count, 3.22 × 106/L; hemoglobin, 9.1 g/dL; platelet count, 263 × 103/L and prothrombin time (INR), 1.49 (reference range 0.8–1.12). Blood chemistry testing revealed the following data: serum blood urea nitrogen, 42.0 mg/dL (reference range 6–20 mg/dL); serum creatinine, 3.46 mg/dL (reference range 0.5–1.2 mg/dL); high-sensitivity C-reactive protein, 36.12 mg/dL (reference range 0–0.3 mg/dL); serum glucose, 378 mg/dL (reference range 70–99 mg/dL); serum ketone body, 266.30 nmol/mL (reference range 0–120 nmol/mL); serum aspartate aminotransferase, 33 IU/L (reference range 8–40 IU/L); serum alanine aminotransferase, 12 IU/L (reference range 5–41 IU/L); serum amylase, 57 IU/L (reference range 41–134 IU/L); serum sodium, 125 mEq/L (reference range 136–145 mEq/L); and serum potassium, 3.9 mEq/L (reference range 3.5–5.1 mEq/L).\nAn axial CT scan revealed extensive gas bubbles in and around the pancreatic necrosis (Fig. A) and in the mesenteric root and left anterior pararenal space. A coronal CT scan also revealed scattered gas bubbles along with the mesenteric root and fat (Fig. B). A sagittal CT scan showed better visualization of the extensive gas in the left anterior pararenal space (Fig. C).\nA Gastrografin swallow study conducted to rule out perforations did not demonstrate any leakage. Upper endoscopy also revealed no evidence of gastroduodenal lesions, such as ulcers or perforations.\nCulture of the pus obtained from the catheter drainage grew Escherichia coli. An antibiotic susceptibility test demonstrated that the microorganism was sensitive to aztreonam, cefepime, cefotaxime, cefoxitin, ceftazidime, cefuroxime, chloramphenicol, colistin, ertapenem, and fosfomycin but resistant to ampicillin, ciprofloxacin, gentamicin, piperacillin, and tetracycline.",
+    "question": "What is the patient's corrected sodium concentration for hyperglycemia in terms of mEq/L? Use the sodium correction equation based on the one derived in Hillier, 1999. You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+    "gold_unit": "mEq/L",
+    "gold_answer": 131.672,
+    "lower": 125.0884,
+    "upper": 138.2556,
+    "gold_entities": {
+      "Glucose": [
+        378.0,
+        "mg/dL"
+      ],
+      "Sodium": [
+        125.0,
+        "mEq/L"
+      ]
+    },
+    "gold_explanation": "Calculator ID 26. Apply the calculator convention stated in the question. Reference input values and units: {\"Glucose\": [378.0, \"mg/dL\"], \"Sodium\": [125.0, \"mEq/L\"]}. Normalize units before substitution. Formula: sodium_mEq_L + 0.024*(glucose_mg_dL - 100), Hillier coefficient. Independently recomputed value: 131.672; dataset answer: 131.672. Values per µL or mm^3 for platelets are divided by 1000 to get 10^9/L; height in cm is divided by 100 for BMI. Sodium mmol/L and mEq/L are numerically equivalent for monovalent sodium."
+  },
+  "30": {
+    "id": "mc-0416",
+    "calculator_id": 30,
+    "calculator": "Serum Osmolality",
+    "kind": "numerical",
+    "note_id": "pmc-5750440-1",
+    "note_hash": "a29629b3121d70dfabe1836ec12497f5aa757256f7ff5f7c53b918ed9dddbe67",
+    "note": "An 85-year-old female with a past medical history significant for type 2 diabetes mellitus presented to the emergency room for progressively altered mental status and difficulty walking. She was increasingly lethargic and was less interactive with family for 3 weeks before presentation. She also had urinary incontinence and gait instability for the same period.\nAccompanying family reported a fall 3 weeks before admission with significant facial bruising. A computed tomography (CT) scan without contrast posttrauma was reported to have central nervous system (CNS) atherosclerosis with ventricular dilatation that was out of proportion to the degree of cortical atrophy []. A working diagnosis of NPH was made and she was scheduled to see a neurosurgeon for further management.\nOn admission, the patient had flat affect and poor cooperation. There was no papilledema. She was unable to follow commands for a complete neurological examination. Serum chemistry revealed sodium - 142 mmol/L, potassium - 2.9 mmol/L, HCO3 - 25 mmol/L, chloride - 102 mmol/L, glucose - 298 mg/dL, blood urea nitrogen - 21 mg/dL, and creatinine - 0.7 mg/dL. Magnetic resonance scan of the brain revealed subtle debris layering the occipital horns of the lateral ventricles without restricted diffusion, consistent with either intraventricular hemorrhage or pus [Figures and ].\nShe was febrile to 103°F. Blood and respiratory cultures were obtained and she was started on a broad-spectrum coverage for possible meningitis. She developed diabetic ketoacidosis, which was addressed. She had two episodes of seizure-like activity. A lumbar puncture was initially deferred, whereas NPH had remained the most probable diagnosis, and the patient had a high international normalized ratio (INR). It was performed emergently following clinical deterioration, with development of fever.\nThe cerebrospinal fluid (CSF) collected had increased protein, decreased glucose, and mononuclear pleocytosis. It was subjected to Gram-stain, which showed yeast and the species of the yeast were confirmed to be C. neoformans on culture. India ink preparation of the CSF was positive for Cryptococcus along with a positive cryptococcal antigen test. The patient was dozed with intravenous liposomal amphotericin B and oral flucytosine. HIV test was negative.\nThe patient continued to deteriorate further and had a cardiac arrest on the same day. She underwent cardiopulmonary resuscitation but could not be revived. Blood culture bottles subsequently grew C. neoformans.",
+    "question": "What is the patient's serum osmolality in terms of mOsm/kg? You may  You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+    "gold_unit": "mOsm/kg",
+    "gold_answer": 308.05556,
+    "lower": 292.65278,
+    "upper": 323.45834,
+    "gold_entities": {
+      "Sodium": [
+        142.0,
+        "mmol/L"
+      ],
+      "Glucose": [
+        298.0,
+        "mg/dL"
+      ],
+      "Blood Urea Nitrogen (BUN)": [
+        21.0,
+        "mg/dL"
+      ]
+    },
+    "gold_explanation": "Calculator ID 30. Apply the calculator convention stated in the question. Reference input values and units: {\"Sodium\": [142.0, \"mmol/L\"], \"Glucose\": [298.0, \"mg/dL\"], \"Blood Urea Nitrogen (BUN)\": [21.0, \"mg/dL\"]}. Normalize units before substitution. Formula: 2*sodium_mmol_L + BUN_mg_dL/2.8 + glucose_mg_dL/18. Independently recomputed value: 308.0555556; dataset answer: 308.05556. Values per µL or mm^3 for platelets are divided by 1000 to get 10^9/L; height in cm is divided by 100 for BMI. Sodium mmol/L and mEq/L are numerically equivalent for monovalent sodium."
+  },
+  "39": {
+    "id": "mc-0496",
+    "calculator_id": 39,
+    "calculator": "Anion Gap",
+    "kind": "numerical",
+    "note_id": "pmc-4530922-1",
+    "note_hash": "90894bc9a947c7dcf7617a5f5c94e0ed734dcb0af4f3040b63a5a2403dca7dd8",
+    "note": "A 56-year-old male was brought to the emergency department by paramedics for a syncopal episode and inability to move his lower extremities. He complained of abdominal pain and inability to move his legs beginning five hours prior to arrival. He awakened from a nap that afternoon and experienced numbness in both legs, which progressed to paralysis. At baseline, he was ambulatory without any history of weakness and was last ambulatory hours prior. He endorsed occasional pain in his legs when walking at baseline.\nHe also complained of abdominal pain with nausea and vomiting for two days. He had a history of alcohol use and reported dark-colored emesis and last bowel movement three days prior. On review of symptoms the patient denied any history of headache, dizziness, chest pain, back pain, trauma, fevers, or extremity weakness. He walked longer than a mile the day prior. History from the patient’s wife revealed that he had an episode of altered level of consciousness while on the couch and that finding combined with his abdominal pain and paralysis prompted her to call 911. The patient’s past medical history was significant for hypertension, peripheral arterial disease, and myocardial infarction 10 years prior. His past surgical history included “abdominal stents” and a left carotid stent. His social history was significant for a 25-pack/year history of smoking and daily alcohol. His medications included atenolol and ranitidine.\nPhysical exam showed an oral temperature of 36.7°C, blood pressure 107/65mmHg, heart rate 99 beats/minute and a respiratory rate of 30 breaths/min, with oxygen saturation on 15L non-rebreather mask of 94%. His weight was 72.5kg and he appeared older than his stated age. He was alert, cooperative and in moderate distress, primarily complaining of pain and cramping in his lower extremities and repeatedly asking staff to straighten out his legs although they were already lying straight and motionless on the gurney. His head exam was unremarkable with the exception of a dry oropharynx. Cervical spine, cardiac, and lung exams were unremarkable. His abdomen was firm and diffusely tender to palpation with generalized rebound and guarding. An irreducible left inguinal hernia was present. He had vomiting, and placement of a nasogastric tube revealed 1.5 liters of coffee-ground emesis. Lower extremities were thin, cool, and without any palpable or Dopplerable pulses in bilateral femoral, popliteal or pedal distribution. There was trace non-reproducible sensation to the mottled lower extremities, and no sensation distal to the ankles. Motor exam was significant for lower extremity paralysis.\nLaboratory data consisted of sodium 121mEq/L (135–145), potassium 6.8mEq/L (3.3–4.8), chloride 89mEq/L (101–111), HCO3- 18mEq/L (25–34), BUN 31mg/dL (8–26), creatinine 1.5mg/dL (0.5–1.3), and blood glucose 367mg/dL (70–115). White blood cell 19.1thous/mcL (4.0–10.5), hemoglobin 12.8g/dL (13.5–16.9), lipase 107U/L (22–51), hematocrit 38.8% (39.5–50.0), and platelets 165thous/mcL (150–400). There was a left shift in the neutrophils 16.2thous/mcL (85%) (2.0–8.1). Alkaline phosphate 88IU/L (26–110), AST 84IU/L (8–40), ALT 38IU/L (0.0–60), total bilirubin 1mg/dL (0.0–1.4), total protein 5.4g/dL (6.1–8.2), albumin 2.6g/dL (3.2–5.5). Lactate 7.2mmol/L (0.7–2.1). ABG showed pH of 7.25 (7.38–7.42), pCO2 31.6mmHg (36–42), pO2 123.6mmHg (80–104), bicarbonate 13.5mmol/L (21–27). PT was 17.3sec (9.5–12.3), PTT 45.9sec (24.1–35.1), and INR 1.62 (0.87–1.14). B-type natriuretic peptide 1,950pg/mL (<100). Troponin 2.75ng/mL (<0.03).\nChest radiograph was unremarkable. Electrocardiogram (ECG) showed sinus rhythm at 95 beats/minute with ST elevation inferiorly, anteriorly and laterally (). Bedside ultrasound to evaluate the abdominal aorta was limited. Vascular surgery was consulted prior to CT for concern of a vascular catastrophe. Cardiology was consulted for the patient’s ECG findings consistent with myocardial infarction. The patient went for a non-contrast head CT that was unremarkable and a CT angiogram of the chest, abdomen and pelvis, which was significant for the abdominal aorta with no contrast opacification 2.2cm superior to the bifurcation (), high-grade stenosis of the right common iliac artery, complete occlusion of the left common iliac artery, stents in the celiac artery and superior mesenteric artery (SMA), evidence of occlusion of the proximal SMA and inferior mesenteric artery (IMA), hepatic, splenic, bilateral renal infarctions, left inguinal hernia, bowel obstruction, pneumatosis intestinalis with evidence of ischemic bowel, and aspiration in the right lower lung. General surgery was consulted.\nThe cardiology service stated that the patient was not a candidate for cardiac catheterization and to start anticoagulation and low-dose aspirin if there was no contraindication or planned surgery. They also recommended thrombolytics for the diffuse thrombotic disease. The patient did have an echocardiography study that revealed an ejection fraction of 35% and multiple regional wall motion abnormalities. General surgery recommended comfort measures as he was not a surgical candidate. Vascular surgery commented that bypass would be futile and if patient survived, would be a candidate for extra-anatomical axillo-bifemoral bypass in the future. The patient was admitted to the medical intensive care unit for broad-spectrum antibiotics and a heparin drip and succumbed to his illness the following day.",
+    "question": "What is the patient's anion gap in terms of mEq/L?  You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+    "gold_unit": "mEq/L",
+    "gold_answer": 14.0,
+    "lower": 13.3,
+    "upper": 14.7,
+    "gold_entities": {
+      "Chloride": [
+        89.0,
+        "mEq/L"
+      ],
+      "Bicarbonate": [
+        18.0,
+        "mEq/L"
+      ],
+      "Sodium": [
+        121.0,
+        "mEq/L"
+      ]
+    },
+    "gold_explanation": "Calculator ID 39. Apply the calculator convention stated in the question. Reference input values and units: {\"Chloride\": [89.0, \"mEq/L\"], \"Bicarbonate\": [18.0, \"mEq/L\"], \"Sodium\": [121.0, \"mEq/L\"]}. Normalize units before substitution. Formula: sodium - chloride - bicarbonate, each in mEq/L, excluding potassium. Independently recomputed value: 14; dataset answer: 14.0. Values per µL or mm^3 for platelets are divided by 1000 to get 10^9/L; height in cm is divided by 100 for BMI. Sodium mmol/L and mEq/L are numerically equivalent for monovalent sodium."
+  },
+  "60": {
+    "id": "mc-0705",
+    "calculator_id": 60,
+    "calculator": "Body Surface Area Calculator",
+    "kind": "numerical",
+    "note_id": "pmc-8072816-1",
+    "note_hash": "fabce26b0d09f1bb13d122985ee776cb3596d6722348f3c4327df0e208d48c0d",
+    "note": "The patient was born with C/S at 38 weeks of gestation with a birth weight of 3820 g; was the 3 rd alive child of a 35-year-old mother in her 4th pregnancy. His mother’s second pregnancy was a male with agenesis of corpus callosum (ACC), congenital heart disease and absence of nasal bone which were detected on ultrasound at 24th week. The pregnancy had been terminated without genetic tests or autopsy. The patient’s antenatal ultrasonographic investigation showed an IACC at 18 weeks of gestation but fetal MRI was not performed and amniocentesis revealed 46, XY karyotype. He had not defecated for the first three days of life; he defecated a large amount of stool after rectal stimulation. The patient underwent laparotomy for intestinal biopsies and diagnosed with HSCR and ileostomy was opened.\nHe presented to our clinic when he was one year old with fever for two days. His weight was 8.4 kg (3 rd percentile); height 74 cm (3 rd percentile); and head circumference 46 cm (25th percentile). Hypertelorism, uplifted earlobes with a central depression, frontal bossing, telecanthus, deeply set eyes, infraorbital fold, long lashes, broad eyebrows with a medial flare, a wide nasal bridge with prominent and rounded nasal tip, low-hanging columella, open-mouth expression, thin “M” shaped upper lip, prominent chin, short neck, wide-spaced nipples, overlapping toes, and pes planus were noted (\n–). Abdominal examination showed no guarding or rebound tenderness; he had orange-colored liquid stool in an ileostomy bag. He had eye contact, social smile, and stereotypic hand movements, speaking indistinguishable three words. Traction response was poor, and he was hypotonic on vertical suspension. He could not sit unassisted. Deep tendon reflexes were normal; bilaterally plantar reflexes were extensor; sustained Achilles clonus was noted. At admission, urinalysis showed pyuria. Acute pyelonephritis was diagnosed. Urinary ultrasound and voiding cystourethrogram showed grade 3 hydronephrosis affecting the right ureter. Cranial magnetic resonance imaging (MRI) demonstrated enlargement of the third and lateral ventricles, the occipital and temporal horns. There was a bilateral incomplete hippocampal inversion, enlargement of thalamus, nucleus caudate, and ACC (\n–). A heterozygous “class 2” c.646dupT (p. Cys216LeufsTer23) mutation on exon 6 of ZEB2 (zinc finger E-box binding homeobox 2) gene was detected by a mutation surveyor program, and the diagnosis of MWS was made. At 16 months, he presented with fever due to pneumonia and generalized seizure for 5 minutes. His EEG showed no epileptic discharge but an immature parietooccipital rhythm for his age. Valproic acid was initiated. The patient is still on follow- up for developmental delay, renal, and gastrointestinal problems.",
+    "question": "What is the patient's body surface area? Please output your answer in terms of m². You should use the patient's medical values and health status when they were first admitted to the hospital prior to any treatment.",
+    "gold_unit": "m^2",
+    "gold_answer": 0.41553,
+    "lower": 0.39475,
+    "upper": 0.43631,
+    "gold_entities": {
+      "weight": [
+        8.4,
+        "kg"
+      ],
+      "height": [
+        74.0,
+        "cm"
+      ]
+    },
+    "gold_explanation": "Calculator ID 60. Apply the calculator convention stated in the question. Reference input values and units: {\"weight\": [8.4, \"kg\"], \"height\": [74.0, \"cm\"]}. Normalize units before substitution. Formula: sqrt(weight_kg*height_cm/3600), Mosteller equation. Independently recomputed value: 0.4155317878; dataset answer: 0.41553. Values per µL or mm^3 for platelets are divided by 1000 to get 10^9/L; height in cm is divided by 100 for BMI. Sodium mmol/L and mEq/L are numerically equivalent for monovalent sodium."
+  }
+}

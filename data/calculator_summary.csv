@@ -1,0 +1,17 @@
+kind,calculator_id,calculator,dev,test,total
+numerical,5,Mean Arterial Pressure (MAP),3,7,10
+numerical,6,Body Mass Index (BMI),1,9,10
+numerical,7,Calcium Correction for Hypoalbuminemia,1,9,10
+numerical,19,Fibrosis-4 (FIB-4) Index for Liver Fibrosis,2,8,10
+numerical,26,Sodium Correction for Hyperglycemia,1,9,10
+numerical,30,Serum Osmolality,2,8,10
+numerical,39,Anion Gap,2,8,10
+numerical,60,Body Surface Area Calculator,1,9,10
+rule,4,CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk,2,8,10
+rule,15,Child-Pugh Score for Cirrhosis Mortality,1,9,10
+rule,16,Wells' Criteria for DVT,3,7,10
+rule,17,Revised Cardiac Risk Index for Pre-Operative Risk,2,8,10
+rule,20,Centor Score (Modified/McIsaac) for Strep Pharyngitis,4,6,10
+rule,21,Glasgow Coma Score (GCS),3,7,10
+rule,45,CURB-65 Score for Pneumonia Severity,3,7,10
+rule,51,SIRS Criteria,1,9,10

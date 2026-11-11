@@ -1,0 +1,539 @@
+{
+  "5": {
+    "calculator_id": 5,
+    "calculator": "Mean Arterial Pressure (MAP)",
+    "kind": "numerical",
+    "formula": "MAP = (SBP + 2*DBP)/3",
+    "inputs": [
+      [
+        "SBP",
+        "systolic pressure",
+        "mm Hg"
+      ],
+      [
+        "DBP",
+        "diastolic pressure",
+        "mm Hg"
+      ]
+    ],
+    "notes": [
+      "Output: mm Hg. Use both pressures from the requested time point; this is the standard approximation, not a waveform integral."
+    ],
+    "sources": [
+      "https://www.mdcalc.com/calc/74/mean-arterial-pressure-map"
+    ],
+    "criteria": [],
+    "reference_version": "course_v1_2026-10-06"
+  },
+  "6": {
+    "calculator_id": 6,
+    "calculator": "Body Mass Index (BMI)",
+    "kind": "numerical",
+    "formula": "BMI = weight_kg / height_m^2",
+    "inputs": [
+      [
+        "weight",
+        "body weight",
+        "kg"
+      ],
+      [
+        "height",
+        "height",
+        "m"
+      ]
+    ],
+    "notes": [
+      "Output: kg/m^2. Convert cm to m by dividing by 100 before squaring. Do not substitute ideal or adjusted weight."
+    ],
+    "sources": [
+      "https://www.mdcalc.com/calc/29/body-mass-index-bmi-body-surface-area-bsa"
+    ],
+    "criteria": [],
+    "reference_version": "course_v1_2026-10-06"
+  },
+  "7": {
+    "calculator_id": 7,
+    "calculator": "Calcium Correction for Hypoalbuminemia",
+    "kind": "numerical",
+    "formula": "corrected_calcium = calcium + 0.8*(4 - albumin)",
+    "inputs": [
+      [
+        "calcium",
+        "measured total calcium",
+        "mg/dL"
+      ],
+      [
+        "albumin",
+        "measured albumin",
+        "g/dL"
+      ]
+    ],
+    "notes": [
+      "Output: mg/dL; normal albumin is fixed at 4 g/dL for this dataset. Albumin g/L / 10 gives g/dL; calcium mmol/L * 4.0078 gives mg/dL. This estimate is not a measured ionized calcium."
+    ],
+    "sources": [
+      "https://www.mdcalc.com/calc/31/calcium-correction-hypoalbuminemia"
+    ],
+    "criteria": [],
+    "reference_version": "course_v1_2026-10-06"
+  },
+  "19": {
+    "calculator_id": 19,
+    "calculator": "Fibrosis-4 (FIB-4) Index for Liver Fibrosis",
+    "kind": "numerical",
+    "formula": "FIB4 = (age * AST) / (platelets * sqrt(ALT))",
+    "inputs": [
+      [
+        "age",
+        "age",
+        "years"
+      ],
+      [
+        "AST",
+        "aspartate aminotransferase",
+        "U/L"
+      ],
+      [
+        "ALT",
+        "alanine aminotransferase",
+        "U/L"
+      ],
+      [
+        "platelets",
+        "platelet count",
+        "10^9/L"
+      ]
+    ],
+    "notes": [
+      "Output: conventional FIB-4 index (no output unit). K/µL has the same numeric value as 10^9/L; counts per µL or mm^3 must be divided by 1000. ALT and platelet count must be positive."
+    ],
+    "sources": [
+      "https://www.mdcalc.com/calc/2200/fibrosis-4-fib-4-index-liver-fibrosis"
+    ],
+    "criteria": [],
+    "reference_version": "course_v1_2026-10-06"
+  },
+  "26": {
+    "calculator_id": 26,
+    "calculator": "Sodium Correction for Hyperglycemia",
+    "kind": "numerical",
+    "formula": "corrected_sodium = measured_sodium + 0.024*(glucose - 100)",
+    "inputs": [
+      [
+        "measured_sodium",
+        "measured sodium",
+        "mEq/L"
+      ],
+      [
+        "glucose",
+        "serum glucose",
+        "mg/dL"
+      ]
+    ],
+    "notes": [
+      "Output: mEq/L. The course questions use the Hillier 2.4 mEq/L per 100 mg/dL convention. The alternative 1.6 coefficient is a different convention, not an arithmetic equivalent. Glucose mmol/L * 18.01559 gives mg/dL. Sodium mmol/L is numerically equivalent to mEq/L."
+    ],
+    "sources": [
+      "https://www.mdcalc.com/calc/50/sodium-correction-hyperglycemia"
+    ],
+    "criteria": [],
+    "reference_version": "course_v1_2026-10-06"
+  },
+  "30": {
+    "calculator_id": 30,
+    "calculator": "Serum Osmolality",
+    "kind": "numerical",
+    "formula": "calculated_osm = 2*sodium + BUN/2.8 + glucose/18",
+    "inputs": [
+      [
+        "sodium",
+        "sodium",
+        "mmol/L or mEq/L"
+      ],
+      [
+        "BUN",
+        "blood urea nitrogen",
+        "mg/dL"
+      ],
+      [
+        "glucose",
+        "serum glucose",
+        "mg/dL"
+      ]
+    ],
+    "notes": [
+      "Course answer unit: mOsm/kg (the conventional calculated estimate). This version excludes ethanol. BUN is nitrogen mass, not total urea mass: urea mmol/L * 2.80134 gives BUN mg/dL. Distinguish measured osmolality, calculated osmolar concentration, and effective osmolality."
+    ],
+    "sources": [
+      "https://www.mdcalc.com/calc/91/serum-osmolality-osmolarity"
+    ],
+    "criteria": [],
+    "reference_version": "course_v1_2026-10-06"
+  },
+  "39": {
+    "calculator_id": 39,
+    "calculator": "Anion Gap",
+    "kind": "numerical",
+    "formula": "anion_gap = sodium - (chloride + bicarbonate)",
+    "inputs": [
+      [
+        "sodium",
+        "sodium",
+        "mEq/L"
+      ],
+      [
+        "chloride",
+        "chloride",
+        "mEq/L"
+      ],
+      [
+        "bicarbonate",
+        "bicarbonate",
+        "mEq/L"
+      ]
+    ],
+    "notes": [
+      "Output: mEq/L. The question version excludes potassium and albumin correction. These monovalent ions have numerically equivalent mmol/L and mEq/L values. Do not substitute an albumin-corrected gap."
+    ],
+    "sources": [
+      "https://www.mdcalc.com/calc/1669/anion-gap"
+    ],
+    "criteria": [],
+    "reference_version": "course_v1_2026-10-06"
+  },
+  "60": {
+    "calculator_id": 60,
+    "calculator": "Body Surface Area Calculator",
+    "kind": "numerical",
+    "formula": "BSA = sqrt(weight_kg * height_cm / 3600)",
+    "inputs": [
+      [
+        "weight",
+        "body weight",
+        "kg"
+      ],
+      [
+        "height",
+        "height",
+        "cm"
+      ]
+    ],
+    "notes": [
+      "Output: m^2. Mosteller version. Height stays in centimetres, unlike BMI. Du Bois and other BSA equations are different versions."
+    ],
+    "sources": [
+      "https://www.mdcalc.com/calc/29/body-mass-index-bmi-body-surface-area-bsa"
+    ],
+    "criteria": [],
+    "reference_version": "course_v1_2026-10-06"
+  },
+  "4": {
+    "calculator_id": 4,
+    "calculator": "CHA2DS2-VASc Score for Atrial Fibrillation Stroke Risk",
+    "kind": "rule",
+    "formula": "score = sum of the non-overlapping point categories below",
+    "inputs": [],
+    "notes": [
+      "Output: integer 0–9. Age categories are mutually exclusive; stroke/TIA/thromboembolism is ONE category, worth at most 2 points. The requested version includes the female-sex point; CHA2DS2-VA is a different score."
+    ],
+    "sources": [
+      "https://www.mdcalc.com/calc/801/cha2ds2-vasc-score-atrial-fibrillation-stroke-risk"
+    ],
+    "criteria": [
+      [
+        "Age",
+        "<65: 0; 65–74: 1; >=75: 2"
+      ],
+      [
+        "Sex category",
+        "female: 1; male: 0"
+      ],
+      [
+        "Heart failure history",
+        "present: 1"
+      ],
+      [
+        "Hypertension history",
+        "present: 1"
+      ],
+      [
+        "Stroke, TIA or systemic thromboembolism history",
+        "any present: 2, counted once"
+      ],
+      [
+        "Vascular disease history",
+        "prior MI, peripheral artery disease or aortic plaque: 1"
+      ],
+      [
+        "Diabetes history",
+        "present: 1"
+      ]
+    ],
+    "reference_version": "course_v1_2026-10-06"
+  },
+  "15": {
+    "calculator_id": 15,
+    "calculator": "Child-Pugh Score for Cirrhosis Mortality",
+    "kind": "rule",
+    "formula": "score = bilirubin_points + albumin_points + INR_points + ascites_points + encephalopathy_points",
+    "inputs": [],
+    "notes": [
+      "Output: integer 5–15. Each component contributes at least 1 point. Use the INR version and standard bilirubin cutoffs below. Albumin g/L / 10 -> g/dL; bilirubin µmol/L / 17.104 -> mg/dL. Ascites and encephalopathy grades require clinical interpretation."
+    ],
+    "sources": [
+      "https://www.mdcalc.com/calc/340/child-pugh-score-cirrhosis-mortality"
+    ],
+    "criteria": [
+      [
+        "Total bilirubin (mg/dL)",
+        "<2: 1; 2 through 3: 2; >3: 3"
+      ],
+      [
+        "Albumin (g/dL)",
+        ">3.5: 1; 2.8 through 3.5: 2; <2.8: 3"
+      ],
+      [
+        "INR",
+        "<1.7: 1; 1.7 through 2.3: 2; >2.3: 3"
+      ],
+      [
+        "Ascites",
+        "none: 1; slight/mild: 2; moderate/severe: 3"
+      ],
+      [
+        "Hepatic encephalopathy",
+        "none: 1; grade I–II: 2; grade III–IV: 3"
+      ]
+    ],
+    "reference_version": "course_v1_2026-10-06"
+  },
+  "16": {
+    "calculator_id": 16,
+    "calculator": "Wells' Criteria for DVT",
+    "kind": "rule",
+    "formula": "score = positive_criteria_count - 2*alternative_diagnosis_at_least_as_likely",
+    "inputs": [],
+    "notes": [
+      "Output: integer -2 through 9. The surgery/bed-rest item is one point even if both apply. This course uses the displayed >3-day bed-rest and >3-cm calf thresholds; preserve these boundary conventions."
+    ],
+    "sources": [
+      "https://www.mdcalc.com/calc/362/wells-criteria-dvt"
+    ],
+    "criteria": [
+      [
+        "Cancer",
+        "ongoing/recent treatment or palliation within 6 months: +1"
+      ],
+      [
+        "Immobility or surgery",
+        "bedridden >3 days OR major surgery within 12 weeks: +1"
+      ],
+      [
+        "Calf difference",
+        ">3 cm compared with other leg, at 10 cm below tibial tuberosity: +1"
+      ],
+      [
+        "Superficial collateral veins",
+        "nonvaricose collaterals: +1"
+      ],
+      [
+        "Leg swelling",
+        "whole symptomatic leg: +1"
+      ],
+      [
+        "Deep-vein tenderness",
+        "localized to deep venous distribution: +1"
+      ],
+      [
+        "Pitting edema",
+        "limited to symptomatic leg: +1"
+      ],
+      [
+        "Lower-limb immobilization",
+        "paralysis, paresis or recent plaster cast: +1"
+      ],
+      [
+        "Previous DVT",
+        "documented: +1"
+      ],
+      [
+        "Alternative diagnosis",
+        "at least as plausible as DVT: -2"
+      ]
+    ],
+    "reference_version": "course_v1_2026-10-06"
+  },
+  "17": {
+    "calculator_id": 17,
+    "calculator": "Revised Cardiac Risk Index for Pre-Operative Risk",
+    "kind": "rule",
+    "formula": "RCRI = count of the six positive categories below",
+    "inputs": [],
+    "notes": [
+      "Output: integer 0–6, not a percent risk. Diabetes alone does not satisfy the insulin-treatment item. Creatinine must be >2 mg/dL, not >=2. Convert creatinine µmol/L / 88.4 -> mg/dL."
+    ],
+    "sources": [
+      "https://www.mdcalc.com/calc/1739/revised-cardiac-risk-index-pre-operative-risk"
+    ],
+    "criteria": [
+      [
+        "Surgery",
+        "intraperitoneal, intrathoracic or suprainguinal vascular: +1"
+      ],
+      [
+        "Ischemic heart disease history",
+        "evidence of ischemic disease (MI, positive stress test, ischemic pain, nitrate therapy or pathological Q waves): +1"
+      ],
+      [
+        "Heart failure history",
+        "present: +1"
+      ],
+      [
+        "Cerebrovascular disease history",
+        "prior stroke or TIA: +1"
+      ],
+      [
+        "Preoperative insulin treatment",
+        "present: +1"
+      ],
+      [
+        "Preoperative creatinine",
+        ">2 mg/dL: +1"
+      ]
+    ],
+    "reference_version": "course_v1_2026-10-06"
+  },
+  "20": {
+    "calculator_id": 20,
+    "calculator": "Centor Score (Modified/McIsaac) for Strep Pharyngitis",
+    "kind": "rule",
+    "formula": "modified_Centor = age_adjustment + fever + tonsillar_finding + anterior_nodes + absence_of_cough",
+    "inputs": [],
+    "notes": [
+      "Output: integer -1 through 5. This is Modified Centor/McIsaac, not original Centor without age adjustment. Fever uses >38 °C. Convert Fahrenheit with (F-32)*5/9. Not mentioning cough is not the same as explicitly documenting its absence."
+    ],
+    "sources": [
+      "https://www.mdcalc.com/calc/104/centor-score-modified-mcisaac-strep-pharyngitis"
+    ],
+    "criteria": [
+      [
+        "Age",
+        "3–14: +1; 15–44: 0; >=45: -1 (not specified here for age <3)"
+      ],
+      [
+        "Temperature",
+        ">38 °C: +1"
+      ],
+      [
+        "Tonsillar finding",
+        "exudate OR swelling: +1, counted once"
+      ],
+      [
+        "Anterior cervical nodes",
+        "tender/swollen: +1"
+      ],
+      [
+        "Cough",
+        "documented absence: +1; present: 0"
+      ]
+    ],
+    "reference_version": "course_v1_2026-10-06"
+  },
+  "21": {
+    "calculator_id": 21,
+    "calculator": "Glasgow Coma Score (GCS)",
+    "kind": "rule",
+    "formula": "GCS = eye + verbal + motor",
+    "inputs": [],
+    "notes": [
+      "Output: integer 3–15 when all three components are assessable. Abnormal flexion (3) differs from normal withdrawal (4). A missing or untestable component is not automatically normal. The source annotations may use assumptions; flag such discrepancies rather than treating that assumption as a clinical rule."
+    ],
+    "sources": [
+      "https://www.glasgowcomascale.org/downloads/GCS-Assessment-Aid.pdf",
+      "https://www.glasgowcomascale.org/faq/"
+    ],
+    "criteria": [
+      [
+        "Eye",
+        "spontaneous: 4; to sound: 3; to pressure/pain: 2; none: 1"
+      ],
+      [
+        "Verbal",
+        "oriented: 5; confused: 4; isolated/inappropriate words: 3; sounds: 2; none: 1"
+      ],
+      [
+        "Motor",
+        "obeys: 6; localizes: 5; normal flexion/withdrawal: 4; abnormal flexion: 3; extension: 2; none: 1"
+      ]
+    ],
+    "reference_version": "course_v1_2026-10-06"
+  },
+  "45": {
+    "calculator_id": 45,
+    "calculator": "CURB-65 Score for Pneumonia Severity",
+    "kind": "rule",
+    "formula": "CURB65 = count of the five positive categories below",
+    "inputs": [],
+    "notes": [
+      "Output: integer 0–5. Low systolic OR diastolic pressure counts once. Course BUN cutoff: >19 mg/dL; the referenced alternative is urea >7 mmol/L. BUN and urea are not interchangeable mass measurements."
+    ],
+    "sources": [
+      "https://www.mdcalc.com/calc/324/curb-65-score-pneumonia-severity"
+    ],
+    "criteria": [
+      [
+        "Confusion",
+        "present: +1"
+      ],
+      [
+        "Urea/BUN",
+        "BUN >19 mg/dL (urea >7 mmol/L convention): +1"
+      ],
+      [
+        "Respiration",
+        "respiratory rate >=30/min: +1"
+      ],
+      [
+        "Blood pressure",
+        "SBP <90 mm Hg OR DBP <=60 mm Hg: +1"
+      ],
+      [
+        "Age",
+        ">=65 years: +1"
+      ]
+    ],
+    "reference_version": "course_v1_2026-10-06"
+  },
+  "51": {
+    "calculator_id": 51,
+    "calculator": "SIRS Criteria",
+    "kind": "rule",
+    "formula": "SIRS_count = count of the four positive groups below",
+    "inputs": [],
+    "notes": [
+      "Output: integer 0–4. Multiple abnormal values within one group still contribute only one point. WBC K/µL * 1000 gives cells/µL, numerically equivalent to cells/mm^3. This task counts traditional adult SIRS criteria; it does not establish a current sepsis diagnosis."
+    ],
+    "sources": [
+      "https://www.mdcalc.com/calc/1096/sirs-sepsis-septic-shock-criteria"
+    ],
+    "criteria": [
+      [
+        "Temperature",
+        ">38 °C OR <36 °C: +1"
+      ],
+      [
+        "Heart rate",
+        ">90/min: +1"
+      ],
+      [
+        "Respiration",
+        "respiratory rate >20/min OR PaCO2 <32 mm Hg: +1"
+      ],
+      [
+        "Leukocytes",
+        "WBC >12000/mm^3 OR <4000/mm^3 OR immature bands >10%: +1"
+      ]
+    ],
+    "reference_version": "course_v1_2026-10-06"
+  }
+}
