@@ -1,0 +1,10 @@
+# Colab supplies torch; retain its CUDA-compatible build.
+transformers==4.57.1
+accelerate==1.11.0
+bitsandbytes==0.48.1
+pandas>=2.2,<3
+numpy>=1.26,<3
+tqdm>=4.66,<5
+huggingface-hub>=0.34,<1
+# Optional EndpointModel dependency; HFModel does not require it.
+openai>=1.60,<3
